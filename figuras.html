@@ -5,6 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figuras geométricas | Curso práctico JS</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Calculador Geométrico</h1>
+    </header>
+
+    <main class="main-grid">
+      <section class="card">
+        <div class="card__form-wrapper">
+          <h2 class="card__title">Cuadrado</h2>
+          <form class="card__form" action="">
+            <label class="card__label" for="InputCuadrado">
+              Escribe cuánto mide cada lado de tu cuadrado
+            </label>
+            <input class="card__input" id="InputCuadrado" type="number" />
+            <div class="card__btn-wrapper">
+              <button
+                class="card__btn"
+                type="button"
+                onclick="calcularPerimetroCuadrado()"
+              >
+                Perímetro
+              </button>
+              <button
+                class="card__btn"
+                type="button"
+                onclick="calcularAreaCuadrado()"
+              >
+                Área
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card__form-wrapper">
+          <h2 class="card__title">Cuadrado</h2>
+          <form class="card__form" action="">
+            <label class="card__label" for="InputCuadrado">
+              Escribe cuánto mide cada lado de tu cuadrado
+            </label>
+            <input class="card__input" id="InputCuadrado" type="number" />
+            <div class="card__btn-wrapper">
+              <button
+                class="card__btn"
+                type="button"
+                onclick="calcularPerimetroCuadrado()"
+              >
+                Perímetro
+              </button>
+              <button
+                class="card__btn"
+                type="button"
+                onclick="calcularAreaCuadrado()"
+              >
+                Área
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./figuras.js"></script>
+  </body>
 </html>
