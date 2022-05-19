@@ -13,6 +13,7 @@
     </header>
 
     <main class="main-grid">
+      <!-- CUADRADO -->
       <section class="card">
         <div class="card__form-wrapper">
           <h2 class="card__title">Cuadrado</h2>
@@ -20,7 +21,12 @@
             <label class="card__label" for="InputCuadrado">
               Escribe cuánto mide cada lado de tu cuadrado
             </label>
-            <input class="card__input" id="InputCuadrado" type="number" />
+            <input
+              class="card__input"
+              id="InputCuadrado"
+              type="number"
+              placeholder="Lado"
+            />
             <div class="card__btn-wrapper">
               <button
                 class="card__btn"
@@ -40,6 +46,61 @@
           </form>
         </div>
       </section>
+      <!-- TRIÁNGULO -->
+      <section class="card">
+        <div class="card__form-wrapper">
+          <h2 class="card__title">Triángulo</h2>
+          <form class="card__form" action="">
+            <label class="card__label" for="InputTrianguloA">
+              Escribe la longitud de los lados para hallar el Perímetro.
+            </label>
+            <label for="InputTrianguloBase">
+              Escribe la longitud la base y la altura para calcular el Área.
+            </label>
+            <input
+              class="card__input"
+              id="InputTrianguloA"
+              type="number"
+              placeholder="Lado A"
+            />
+            <input
+              class="card__input"
+              id="InputTrianguloB"
+              type="number"
+              placeholder="Lado B"
+            />
+            <input
+              class="card__input"
+              id="InputTrianguloBase"
+              type="number"
+              placeholder="Base"
+            />
+            <input
+              class="card__input"
+              id="InputTrianguloAltura"
+              type="number"
+              placeholder="Altura"
+            />
+            <div class="card__btn-wrapper">
+              <button
+                class="card__btn"
+                type="button"
+                onclick="calcularPerimetroTriangulo()"
+              >
+                Perímetro
+              </button>
+              <button
+                class="card__btn"
+                type="button"
+                onclick="calcularAreaTriangulo()"
+              >
+                Área
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- CÍRCULO -->
       <section class="card">
         <div class="card__form-wrapper">
           <h2 class="card__title">Cuadrado</h2>
@@ -47,7 +108,12 @@
             <label class="card__label" for="InputCuadrado">
               Escribe cuánto mide cada lado de tu cuadrado
             </label>
-            <input class="card__input" id="InputCuadrado" type="number" />
+            <input
+              class="card__input"
+              id="InputCuadrado"
+              type="number"
+              placeholder="Lado"
+            />
             <div class="card__btn-wrapper">
               <button
                 class="card__btn"
