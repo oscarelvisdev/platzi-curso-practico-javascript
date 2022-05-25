@@ -1,0 +1,131 @@
+:root {
+  --accents-6: #999;
+  --accents-5: #888;
+  --accents-2: #333;
+  --accents-1: #111;
+}
+
+/* RESET CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* END RESET CSS */
+
+.header {
+  padding: 10px 24px;
+}
+.header__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__description {
+  text-align: justify;
+  color: var(--accents-5);
+}
+
+.discount-section {
+  margin: 0 24px;
+}
+.discount-title {
+  font-size: 20px;
+  padding: 20px 0 10px 0;
+}
+.form-wrapper {
+  margin: 0 auto;
+  max-width: 416px;
+  padding: 16px;
+  background-color: var(--accents-1);
+  border: 1px solid var(--accents-2);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  color: var(--accents-6);
+  padding: 5px 0;
+}
+.form__input {
+  background-color: var(--accents-2);
+  /* background-color: white; */
+  color: inherit;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.form__input:focus {
+  outline: solid 1px #6b4fbb;
+}
+.form__btn {
+  background-color: #6b4fbb;
+  color: white;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 16px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-family: inherit;
+  font-weight: bolder;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+}
+
+.form__result-calc {
+  padding-top: 8px;
+}

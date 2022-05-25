@@ -81,3 +81,20 @@ function calcularAreaTriangulo() {
   const area = areaTriangulo(valueBase, valueAltura);
   alert(area);
 }
+
+// CIRCULO
+function calcularPerimetroCirculo() {
+  const inputCirculo = document.getElementById("InputCirculo");
+  const valueRadio = Number(inputCirculo.value);
+
+  const perimetro = perimetroCirculo(valueRadio);
+  alert(perimetro);
+}
+
+function calcularAreaCirculo() {
+  const inputCirculo = document.getElementById("InputCirculo");
+  const valueRadio = Number(inputCirculo.value);
+
+  const area = areaCirculo(valueRadio);
+  alert(area);
+}
